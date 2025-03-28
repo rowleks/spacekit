@@ -7,8 +7,9 @@
   --color-gray: #efefef;
   --color-txt: #151515;
   --color-stroke: #9b8f7e;
+  --color-nav: #ffffff38;
 
-  --font-manrope: Satoshi, sans-serif;
+  --font-manrope: "manrope", sans-serif;
 
   --text-h1: 7.75rem;
   --text-h2: 5rem;
@@ -37,4 +38,8 @@ h3 { font-size: var(--text-h3); }
 h4 { font-size: var(--text-h4); }
 h5 { font-size: var(--text-h5); }
 h6 { font-size: var(--text-h6); }
+
+.animate-spin {
+  animation-duration: 20s;
+}
 
