@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../button/Button";
 
 export default function Navbar() {
@@ -16,9 +17,9 @@ export default function Navbar() {
           <div className="flex space-x-4 justify-center items-center">
             {" "}
             {/* Added space between nav items */}
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">FAQ</a>
+            <Link href="#">Home</Link>
+            <Link href="/products">Products</Link>
+            <Link href="#">FAQ</Link>
             <Button />
           </div>
         </div>
