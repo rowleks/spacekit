@@ -46,9 +46,9 @@ export default function Faq() {
 
   return (
     <div className="bg-gray px-8 py-24">
-      <h5 className="text-center max-w-xl leading-18 mx-auto mb-8">
+      <h6 className="text-huge text-center max-w-xl leading-18 mx-auto mb-8 md:text-h5">
         Frequently asked questions
-      </h5>
+      </h6>
 
       {faqs.map((faq, index) => (
         <div
