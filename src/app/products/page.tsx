@@ -4,6 +4,7 @@ import React from "react";
 import ProductCard from "@/components/productcard/ProductCard";
 import Navbar from "@/components/navbar/Navbar";
 import Faq from "@/components/faq/Faq";
+import Footer from "@/components/footer/Footer";
 
 const Product = () => {
   return (
@@ -43,6 +44,7 @@ const Product = () => {
           min-width: 200%;
         }
       `}</style>
+      <Footer/>
     </div>
   );
 };
