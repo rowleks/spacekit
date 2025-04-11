@@ -10,9 +10,9 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: "Spackit",
-  description: "Whether you're looking for a stylish new bag, a captivating book, or a perfect mug for your morning brew, we've got you covered.",
+  description:
+    "Whether you're looking for a stylish new bag, a captivating book, or a perfect mug for your morning brew, we've got you covered.",
 };
-
 
 export default function RootLayout({
   children,
@@ -21,10 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={manrope.className}>
-      <body
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

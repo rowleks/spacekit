@@ -24,6 +24,8 @@
   --text-regular: 1rem;
   --text-small: 0.875rem;
   --text-tiny: 0.75rem;
+
+  --breakpoint-3xl : 110rem
 }
 
 body {
