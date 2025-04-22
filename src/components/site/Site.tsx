@@ -5,7 +5,7 @@ import Slide from "../slide/Slide";
 
 const Site = () => {
   return (
-    <div className="pt-30 bg-gray-200">
+    <div className="pt-8 md:pt-30 bg-gray-200">
       <div className="text-center">
         <div className="grid justify-center items-center">
           <div className="overflow-hidden w-80 flex justify-center items-center">
@@ -19,10 +19,10 @@ const Site = () => {
             </p>
           </div>
         </div>
-        <h5 className="text-wrap">
+        <h6 className="text-wrap text-4xl leading-snug my-6 md:text-6xl">
           Explore our curated collection <br></br>
           of high-quality products
-        </h5>
+        </h6>
         <p>
           Whether you&#39;re looking for a stylish new bag, a captivating book,
           or a<br></br>

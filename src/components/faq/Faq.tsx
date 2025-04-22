@@ -45,38 +45,40 @@ export default function Faq() {
   };
 
   return (
-    <div className="bg-gray px-8 py-24">
-      <h6 className="text-huge text-center max-w-xl leading-18 mx-auto mb-8 md:text-h5">
-        Frequently asked questions
-      </h6>
+    <div className="bg-gray">
+      <div className=" px-8 py-24 mx-auto max-w-7xl">
+        <h6 className="text-huge text-center max-w-xl leading-18 mx-auto mb-8 md:text-h5">
+          Frequently asked questions
+        </h6>
 
-      {faqs.map((faq, index) => (
-        <div
-          className={`hover:bg-white p-6 rounded-md cursor-pointer mb-2 ${
-            openIndexes.includes(index) ? "bg-white" : "bg-transparent"
-          }`}
-          key={index}
-          onClick={() => toggleFaq(index)}
-        >
-          <div className="flex justify-between items-center">
-            <p>{faq.question}</p>
-            <span
-              className={`transform transition-transform duration-300 text-large ${
-                openIndexes.includes(index) ? "rotate-270" : "rotate-90"
+        {faqs.map((faq, index) => (
+          <div
+            className={`hover:bg-white p-6 rounded-md cursor-pointer mb-2 ${
+              openIndexes.includes(index) ? "bg-white" : "bg-transparent"
+            }`}
+            key={index}
+            onClick={() => toggleFaq(index)}
+          >
+            <div className="flex justify-between items-center">
+              <p>{faq.question}</p>
+              <span
+                className={`transform transition-transform duration-300 text-large ${
+                  openIndexes.includes(index) ? "rotate-270" : "rotate-90"
+                }`}
+              >
+                &gt;
+              </span>
+            </div>
+            <div
+              className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+                openIndexes.includes(index) ? "max-h-40 my-3" : "max-h-0"
               }`}
             >
-              &gt;
-            </span>
+              <p className="text-txt">{faq.answer}</p>
+            </div>
           </div>
-          <div
-            className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-              openIndexes.includes(index) ? "max-h-40 my-3" : "max-h-0"
-            }`}
-          >
-            <p className="text-txt">{faq.answer}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
