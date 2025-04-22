@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from '../product/Product';
+
 import ProductCard from '../productcard/ProductCard';
 
 const Headline = () => {

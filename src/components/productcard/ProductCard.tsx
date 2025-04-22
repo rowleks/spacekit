@@ -2,12 +2,12 @@ import React from "react";
 
 const ProductCard = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6 flex justify-center items-center gap-4 mt-4">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-md ">
+    <div className="mx-auto max-w-7xl px-4 py-6 flex justify-center items-center gap-4 mt-4 flex-wrap">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm w-full md:max-w-md">
         <img
           src="./space-kit-bag-2.jpg"
           alt="Product Image"
-          className="w-[1500px] h-64 object-cover"
+          className="w-full h-64 object-cover"
         />
         <div className="p-4">
           <div className="flex justify-between items-center mb-2">
@@ -21,11 +21,11 @@ const ProductCard = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-md ">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm w-full md:max-w-md">
         <img
           src="./space-kit-book.jpg"
           alt="Product Image"
-          className="w-[1500px] h-64 object-cover"
+          className="w-full h-64 object-cover"
         />
         <div className="p-4">
           <div className="flex justify-between items-center mb-2">
@@ -39,11 +39,11 @@ const ProductCard = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-md ">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm w-full md:max-w-md">
         <img
           src="./two-cups.jpg"
           alt="Product Image"
-          className="w-[1500px] h-64 object-cover"
+          className="w-full h-64 object-cover"
         />
         <div className="p-4">
           <div className="flex justify-between items-center mb-2">

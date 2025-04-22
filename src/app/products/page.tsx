@@ -11,9 +11,9 @@ const Product = () => {
     <div className="bg-gray">
       <Navbar />
 
-      <div className="flex flex-col justify-center items-center">
-        <div className="overflow-hidden w-80 flex justify-center items-center">
-          <p className="whitespace-nowrap animate-scroll-text align-middle text-small">
+      <div className="flex flex-col justify-center items-center py-8 md:py-12">
+        <div className="overflow-hidden w-full md:w-80 flex justify-center items-center">
+          <p className="whitespace-nowrap animate-scroll-text align-middle text-sm md:text-base">
             YOUR GATEWAY TO THE STARS{" "}
             <span className="text-2xl mx-1.5 text-primary">&bull;</span> YOUR
             GATEWAY TO THE STARS{" "}
@@ -22,12 +22,15 @@ const Product = () => {
             <span className="text-2xl mx-1.5 text-primary">&bull;</span>{" "}
           </p>
         </div>
-        <h6 className="text-h6 text-center max-w-4xl leading-snug mt-4 md:text-h5">
+        <h6 className="text-h6 text-center max-w-4xl leading-snug mt-4 text-xl md:text-h5">
           Explore the space kits designed to inspire curiosity and wonder.
         </h6>
-        <ProductCard />
+        <div className="w-full px-4 md:px-8 mt-8">
+          <ProductCard />
+        </div>
       </div>
       <Faq />
+      <Footer />
 
       <style jsx>{`
         @keyframes scrollText {
@@ -44,7 +47,6 @@ const Product = () => {
           min-width: 200%;
         }
       `}</style>
-      <Footer/>
     </div>
   );
 };
