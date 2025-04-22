@@ -1,6 +1,5 @@
-"use client"
+"use client";
 import Link from "next/link";
-import Button from "../button/Button";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -25,7 +24,12 @@ export default function Navbar() {
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
           </svg>
         </button>
         <div className={`hidden md:flex md:space-x-8 items-center`}>
@@ -47,19 +51,22 @@ export default function Navbar() {
           >
             FAQ
           </Link>
-          
-        <Link
-          href="Contactus"
-          className="text-base leading-6 py-2 px-6 bg-white rounded-md border-b-1 border-primary cursor-pointer hover:border-b-2 transition-all duration-1"
-        >
-          ContactUs
-        </Link>
-        
+
+          <Link
+            href="Contactus"
+            className="text-base leading-6 py-2 px-6 bg-white rounded-md border-b-1 border-primary cursor-pointer hover:border-b-2 transition-all duration-1"
+          >
+            ContactUs
+          </Link>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden ${isOpen ? 'flex flex-col mt-4 space-y-3' : 'hidden'}`}>
+      <div
+        className={`md:hidden ${
+          isOpen ? "flex flex-col mt-4 space-y-3" : "hidden"
+        }`}
+      >
         <Link
           href="/"
           className="hover:opacity-60 transform hover:translate-y-[1px] transition-all duration-200"
@@ -84,7 +91,6 @@ export default function Navbar() {
         >
           ContactUs
         </Link>
-        
       </div>
     </nav>
   );
