@@ -7,8 +7,9 @@
   --color-gray: #efefef;
   --color-txt: #151515;
   --color-stroke: #9b8f7e;
+  --color-nav: #ffffff38;
 
-  --font-manrope: Satoshi, sans-serif;
+  --font-manrope: "manrope", sans-serif;
 
   --text-h1: 7.75rem;
   --text-h2: 5rem;
@@ -23,6 +24,8 @@
   --text-regular: 1rem;
   --text-small: 0.875rem;
   --text-tiny: 0.75rem;
+
+  --breakpoint-3xl : 110rem
 }
 
 body {
@@ -36,5 +39,44 @@ h2 { font-size: var(--text-h2); }
 h3 { font-size: var(--text-h3); }
 h4 { font-size: var(--text-h4); }
 h5 { font-size: var(--text-h5); }
-h6 { font-size: var(--text-h6); }
 
+.animate-spin {
+  animation-duration: 20s;
+}
+
+.slide-container {
+  position: relative; /* Needed for sticky positioning of children */
+  min-height: 100vh; /* Ensure the container is at least the height of the viewport */
+}
+
+.sticky-left {
+  position: sticky;
+  top: 0; /* Stick to the top of its containing block */
+  height: 100vh; /* Make it at least the height of the viewport */
+  /* Add any other styling for the left div if needed */
+}
+
+/* Apply the sticky behavior only on larger screens (e.g., min-width: 1024px) */
+@media (min-width: 1024px) {
+  .slide-container {
+    align-items: flex-start; /* Align items to the start on larger screens */
+  }
+
+  .sticky-left {
+    /* Ensure it doesn't interfere with smaller screen layouts */
+    z-index: 10; /* Keep it above other content if needed */
+  }
+}
+
+/* On smaller screens, revert to a more standard layout */
+@media (max-width: 1023px) {
+  .slide-container {
+    flex-direction: column; /* Stack the divs vertically */
+    align-items: center; /* Center items if you like */
+  }
+
+  .sticky-left {
+    position: static; /* Disable sticky positioning */
+    height: auto; /* Reset height */
+  }
+}
