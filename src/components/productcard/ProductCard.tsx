@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 mt-4 w-full">
+    <div data-aos="fade-in" className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 mt-4 w-full">
       <div className="bg-white rounded-lg shadow-md overflow-hidden w-full">
         <img
           src="./space-kit-bag-2.jpg"

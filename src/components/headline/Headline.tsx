@@ -5,7 +5,7 @@ import ProductCard from "../productcard/ProductCard";
 const Headline = () => {
   return (
     <div className="bg-gray">
-      <div className="mx-auto max-w-7xl px-4 py-6 ">
+      <div data-aos="fade-up" className="mx-auto max-w-7xl px-4 py-6 ">
         {" "}
         {/* Outer div, not flexed */}
         <div className="flex justify-between items-center mb-12">

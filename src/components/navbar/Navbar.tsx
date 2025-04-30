@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-nav backdrop-filter backdrop-blur-lg rounded-[1.375rem] py-4 px-9 mt-5">
+    <nav  data-aos="fade-in" className="bg-nav backdrop-filter backdrop-blur-lg rounded-[1.375rem] py-4 px-9 mt-5">
       <div className="flex justify-between items-center">
         <Link href="/">
           <img src="./spacekit-logo.png" alt="logo" width={128} />
