@@ -62,7 +62,7 @@ export default function Faq() {
             <div className="flex justify-between items-center">
               <p>{faq.question}</p>
               <span
-                className={`transform transition-transform duration-300 text-large ${
+                className={`transform transition-transform duration-300 text-normal ${
                   openIndexes.includes(index) ? "rotate-270" : "rotate-90"
                 }`}
               >
